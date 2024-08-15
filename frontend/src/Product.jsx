@@ -48,10 +48,10 @@ function Product(props) {
                 }}>{props.company} &gt; {props.category}</span>
                 <div className="options">
                     <label>Min Price :</label>
-                    <input type="number" value={minPrice} onChange={(e) => setMinPrice(e.target.value)} />
+                    <input type="number" value={minPrice} onChange={(e) => setMinPrice(Math.max(1, Math.min(maxPrice-1, e.target.value)))} />
 
                     <label>Max Price :</label>
-                    <input type="number" value={maxPrice} onChange={(e) => setMaxPrice(e.target.value)} />
+                    <input type="number" value={maxPrice} onChange={(e) => setMaxPrice(Math.max(minPrice+1, e.target.value))} />
 
                     <label>Top :</label>
                     <input type="number" value={top} onChange={(e) => setTop(e.target.value)} />
