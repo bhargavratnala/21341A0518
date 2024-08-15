@@ -1,0 +1,42 @@
+.companyList, .productList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+.companyList li, .productList li{
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.productList li{
+    flex-basis: 100px;
+}
+
+.ProductContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.productCard{
+    flex-basis: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.productDetails{
+    height: fit-content;
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
