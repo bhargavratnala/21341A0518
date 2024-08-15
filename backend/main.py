@@ -35,6 +35,7 @@ def get_product(company, category):
     minPrice = request.form['minPrice']
     maxPrice = request.form['maxPrice']
     page = int(request.form['page'])
+    sort = request.form['sort']
 
     if page > 1:
         start = top * (page - 1)
@@ -56,6 +57,8 @@ def get_product(company, category):
 
     if page > 1:
         data = data[start:]
+
+    data.sort(key=lambda x: x[sort])
 
     return jsonify(data)
 
