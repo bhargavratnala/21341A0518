@@ -40,3 +40,20 @@
     padding: 5px 10px;
     justify-content: space-between;
 }
+
+.settings{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.options input{
+    margin-right: 5px;
+    width: 80px;
+}
